@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header {
+    height: 100px;
+}
+
+section {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 250px;
+    background-color: #5ee1e6;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+#bateau {
+    margin-top: 23%;
+    margin-left: 20%;
+    animation-name: moveBateau;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    /* animation: moveBateau 8s forwards; */
+}
+
+@keyframes moveBateau {
+    from {
+        transform: translate(-60%);
+    }
+
+    to {
+        transform: translate(100%);
+    }
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    color: #80CEE1;
+    margin: 5px;
+    margin-bottom: 50%;
+}
+
+div:nth-child(3) {
+    background-color: grey;
+}
+
+div:hover {
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition-delay: 0.5s;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+}
+
+footer strong {
+    font-weight: normal;
+}
+
+#tresor {
+    display: block;
+    margin: auto;
+    cursor: grab;
+}
